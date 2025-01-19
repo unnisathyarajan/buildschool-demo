@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1a365d;
+  --secondary: #c7a007;
+  --primary-light: #2a4a7f;
+  --secondary-light: #e3b708;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+}
+
+.card-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+}
